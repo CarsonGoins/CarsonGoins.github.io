@@ -10,7 +10,7 @@ html {
 }
 /* main */
 main {
-  margin: 15%;
+  margin: 1%;
 }
 
 /* nav bar */
@@ -44,7 +44,7 @@ nav{
   position: fixed;
   top: 0;
   left: 0;
-  width: 250px;
+  width: 75px;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -90,18 +90,31 @@ h1 {
 }
 
 .blurb {
+  max-width: 675px;
   line-height: 1.4;
   margin-top: 35px;
   font-size: 24px;
   color: var(--primary);
-  inline-size: 740px;
+  inline-size: 740px auto;
   overflow-wrap: break-word;
 }
 section{
-  margin: 0px 300px;
+  margin: 0px 150px;
   padding: 200px 0px;
   font-size: 100px;
+  min-width: 200px;
+  justify-content: center;
 }
+/* @media screen and (min-width: 601px) {
+  .blurb, .response {
+    font-size: 35px;
+  }
+}
+@media screen and (max-width: 1400px) {
+  .blurb, .response {
+    inline-size: 740px auto;
+  }
+} */
 #header{
   font-size: 40px;
  font-weight: 600px;
