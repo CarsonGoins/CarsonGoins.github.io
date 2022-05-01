@@ -10,7 +10,7 @@
     <!-- This style sheet is strictly for the social logos -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="reset.css" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" target="_blank" href="style.css" />
   </head>
   <body>
     <header>
@@ -25,7 +25,7 @@
           <ul class="linksUL">
             <li><a href="#about">About</a></li>
             <li><a href="#projects">Projects</a></li>
-            <li><a href="resume.pdf"style="border:#64ffda; padding:7px; border-radius: 3px; border-width:2px; border-style:solid;" href="index.html">Resume</a></li>
+            <li><a href="resume.pdf" target="_blank" style="border:#64ffda; padding:7px; border-radius: 3px; border-width:2px; border-style:solid;">Resume</a></li>
           </ul>
         </div>
       </nav>
@@ -33,19 +33,19 @@
     <div class="nav">
       <ul class="nav">
         <li>
-          <a href="https://github.com/CarsonGoins">
+          <a href="https://github.com/CarsonGoins" target="_blank">
             <i class="fa fa-github" id="leftNavLogo"></i>
           </a>
         </li>
         <li>
-          <a href="https://www.linkedin.com/in/carson-goins-7a616a174/">
+          <a href="https://www.linkedin.com/in/carson-goins-7a616a174/" target="_blank">
             <i class="fa fa-linkedin-square" id="leftNavLogo"></i>
           </a>
         </li>
       </ul>
     </div>
     <main>
-      <section content="width=device-width, initial-scale=1" class="section">
+      <section content="width=device-width, initial-scale=1" class="section2">
         <p class="intro response">Hi, my name is</p>
         <h1>Carson Goins,</h1>
         <p class="intro-2 response">Welcome to my portfolio!</p>
@@ -55,7 +55,7 @@
           obtaining a job in web development!
         </p>
       </section>
-      <section content="width=device-width, initial-scale=1" id="about" class="section">
+      <section content="width=device-width, initial-scale=1" id="about" class="section2">
         <h1 id="header">About Me</h1>
         <p class="blurb">
           Hello, I am Carson Goins and I'm a software engineer! I have recently 
@@ -65,6 +65,7 @@
         <div>
           <ul class="blurb response" style="list-style-type:circle">
             <li><a >JavaScript, HTML, CSS</a></li>
+            <li><a>Java, Python, C++, C#</a></li>
             <li><a >Node.js</a></li>
             <li><a >Handlebars</a></li>
             <li><a >React</a></li>
@@ -72,41 +73,33 @@
           </ul>
         </div>
       </section>
-      <div class="m-3 grid-cols-6 grid-rows-3 border-green text-center md:grid text-white">
-        <div class="col-span-4 row-span-2 p-5 md:border">
-          <h1 class="text-5xl">Ultimate Stat Tracker</h1>
-        </div>
-        <div class="col-span-2 row-span-3 p-5 md:border-green">
-          <p>An application for tracking the stats of an Ultimate Frisbee Team. Team owners are able to authenticate their team and edit the roster as they please.</p>
-        </div>
-        <div class="col-span-3 p-5 md:border-green">
-          <p>JavaScript, CSS, Handlebars, Node.js, SQL, Heroku</p>
-        </div>
-        <div class="p-5 md:border-green">
-          <p>[img]</p>
-        </div>
-      </div>
-      
-      <section content="width=device-width, initial-scale=1" id="projects" class="section">
+      <section content="width=device-width, initial-scale=1" id="projects" class="size projectGrids">
         <h1 style="margin-bottom: 50px;"id="header">Projects</h1>
         <!-- <ul style="color: #64ffda; list-style-type:number"> -->
-        <div class="wrapper response2">
-          <div class="box a">Ultimate Stat Tracker</div>
-          <div class="box b">An application for tracking the stats of an Ultimate Frisbee Team.
-            Team owners are able to authenticate their team and edit the roster as they please.
+          <div onclick="window.open('https://ultimate-stat-tracker.herokuapp.com/', '_blank');" class="hover m-3 grid-cols-6 grid-rows-3 border-green text-center md:grid text-white">
+            <div class="col-span-4 row-span-2 p-5 md:border">
+              <h1 class="text-5xl">Ultimate Stat Tracker</h1>
+            </div>
+            <div class="textPosition col-span-2 row-span-3 p-5 md:border-green">
+              <p>An application for tracking the stats of an Ultimate Frisbee Team. Team owners are able to authenticate their team and edit the roster as they please.</p>
+            </div>
+            <div class="col-span-4 p-5 md:border-green">
+              <p>Handlebars, JavaScript, CSS, Node.js, SQL, Heroku</p>
+            </div>
           </div>
-          <div class="box c">JavaScript, CSS, Handlebars, Node.js, SQL, Heroku</div>
-          <a href="https://ultimate-stat-tracker.herokuapp.com/" class="box d"><img class="imgClass" src="usau.png" alt="ust" height ="100%" width="100%"/></a>
-        </div>
-        <div class="wrapper response2">
-          <div class="box a">Big Bang Theory Directory</div>
-          <div class="box b">An application for searching and learning about Big Bang Theory characters.
+        <div onclick="window.open('https://big-bang-theory-directory.herokuapp.com/', '_blank');" class="hover m-3 grid-cols-6 grid-rows-3 border-green text-center md:grid text-white">
+          <div class="col-span-4 row-span-2 p-5 md:border">
+            <h1 class="text-5xl">Big Bang Theory Directory</h1>
           </div>
-          <div class="box c">JavaScript, CSS, React, Node.js, Heroku</div>
-          <a href="https://big-bang-theory-directory.herokuapp.com/" class="box d"><img class="imgClass" src="1.jpg" alt="ust" height ="100%" width="100%"/></a>
+          <div class="textPosition col-span-2 row-span-3 p-5 md:border-green">
+            <p">An application for searching and learning about Big Bang Theory characters.</p>
+          </div>
+          <div class="col-span-4 p-5 md:border-green">
+            <p> React, JavaScript, CSS, Node.js, Heroku</p>
+          </div>
         </div>
-      <!-- </ul> -->
       </section>
+      <!-- </ul> -->
     </main>
     <script src="main.js"></script>
   </body>
