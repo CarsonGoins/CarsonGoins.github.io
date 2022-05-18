@@ -18,6 +18,7 @@ main {
 
 /* nav bar */
 nav{
+  min-width: 325px;
   display: flex;
   justify-content: space-between;
   background-color: var(--dark);
@@ -213,12 +214,32 @@ li::marker{
   .md\:grid {
     display: grid;
   }
-
-  .md\:border-green {
+  .md\:border-green3 {
     border: #64ffda;
     border-width: 2px;
+    border-top: 0;
+    border-right: 0;
+    border-bottom: 0;
     border-radius: 1px;
     border-style:solid;
+  }
+  .md\:border-green2 {
+    border: #64ffda;
+    border-width: 2px;
+    border-right: 0;
+    border-left: 0;
+    border-bottom: 0;
+    border-radius: 1px;
+    border-style:solid;
+  }
+  .md\:border-green {
+    border: #64ffda;
+    border-width: 0px;
+    border-radius: 1px;
+    border-style:solid;
+
+    /* border-right: 2px solid #64ffda; */
+
   }
   .nav {
     position: fixed;
@@ -231,7 +252,7 @@ li::marker{
     justify-content:  center;
   }
   .section2{
-    margin: 0px 130px;
+    margin: 55px 130px;
     padding: 200px 0px;
     font-size: 100px;
     min-width: 200px;
